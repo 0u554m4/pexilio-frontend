@@ -1,1 +1,102 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
 
+    /* Navbar أعلى الصفحة */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .search input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+    }
+
+    .nav-right button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+    .dark-mode {
+      font-size: 18px;
+    }
+
+    /* القسم السفلي */
+    .main-section {
+      display: flex;
+      padding: 40px 20px;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* جهة اليسار: مربعات روابط */
+    .left-panel {
+      background-color: #1e90ff;
+      padding-bottom: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      min-width: 180px;
+    }
+
+    .left-panel .box {
+      padding: 20px;
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .left-panel .box:hover {
+      background-color: #005bb5;
+      transform: translateX(5px);
+    }
+
+    /* الوسط: مربعات فارغة */
+    .center-panel {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .center-panel .empty-box {
+      height: 120px;
+      border: 2px dashed #1e90ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1e90ff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .center-panel .empty-box:hover {
+      background-color: #e0f0ff;
+    }
