@@ -100,3 +100,20 @@ body {
     .center-panel .empty-box:hover {
       background-color: #e0f0ff;
     }
+
+
+
+
+    body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .navbar {
+  background-color: #000;
+}
+
+body.dark .center-panel .empty-box {
+  border-color: #888;
+  color: #ccc;
+}
